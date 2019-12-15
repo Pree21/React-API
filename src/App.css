@@ -1,0 +1,124 @@
+body{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+}
+*{
+  box-sizing: border-box;
+}
+header{
+  background-color: #000;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 60px;
+  color: #fff;
+  padding: 0 20px;
+}
+header h1{
+  font-weight: normal;
+  font-size: 22px;
+}
+.menu a{
+  color:rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.menu a:hover, .menu a:focus{
+  color:rgba(255,255,255,0.7);
+  text-decoration: none;
+}
+.menu a.active{
+  color: #fff;
+}
+.main{
+width:100%;
+  padding: 20px;
+}
+.box-outer{
+  padding:10px 0;
+}
+.box {
+  background-color: white;
+  margin: auto;
+  border: 1px solid #efefef;
+  box-shadow:0 1px 1px rgba(0,0,0,0.15);
+  padding: 20px;
+  flex-basis: 32%;
+  margin: 1% 0;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box .item-desc{
+  padding-left: 40px;
+}
+.box p{
+  max-height: 105px;overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  min-height: 85px;
+}
+.box .img-box{
+  max-width: 80px;
+  width: 100%;
+}
+.box .img-box img{
+  height: 153px;
+}
+.search-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  width: 100%;
+  max-width: 500px;
+}
+.search-form input.text{
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: none;
+  border:1px solid #ddd;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+.search-form input.text:focus{
+  outline: none;
+  box-shadow: none;
+}
+.star{
+  position: absolute;
+  right: 20px;
+  top:20px;
+}
+.star i{
+  color: #5cd0b3;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px){
+  .box-outer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .box{
+    flex-basis: 49%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .box{
+    margin:5% 0;
+  }
+}
